@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "tsc && (echo #!/usr/bin/node && cat dist/index.js) > dist/index.js.tmp && mv dist/index.js.tmp dist/index.js"
+    "build": "tsc && (echo #!/usr/bin/env node && cat dist/index.js) > dist/index.js.tmp && mv dist/index.js.tmp dist/index.js"
   },
   "files": [
     "dist"
