@@ -1,0 +1,25 @@
+{
+  "name": "arco-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "arco-mcp-server": "dist/index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && (echo #!/usr/bin/node && cat dist/index.js) > dist/index.js.tmp && mv dist/index.js.tmp dist/index.js"
+  },
+  "files": ["dist"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "zod": "^3.25.75"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  }
+}
