@@ -1,5 +1,5 @@
 {
-  "name": "arco-mcp-server",
+  "name": "@rfangjiayou/arco-mcp-server",
   "version": "1.0.0",
   "type": "module",
   "bin": {
@@ -9,7 +9,9 @@
   "scripts": {
     "build": "tsc && (echo #!/usr/bin/node && cat dist/index.js) > dist/index.js.tmp && mv dist/index.js.tmp dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
